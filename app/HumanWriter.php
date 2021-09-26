@@ -13,7 +13,7 @@ class HumanWriter
         $cvsData = $name . ";" . $surname. ";" . $pk . ";". $comments ."\n";
         if($fp) {
             fwrite($fp, $cvsData); // Write information to the file
-            fclose($fp); // Close the file
+            fclose($fp);
         }
     }
 }
